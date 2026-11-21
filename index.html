@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartazes que Vendem — E-book + Masterclass | C. Studio</title>
+<meta name="description" content="Aprende a criar cartazes e flyers profissionais com Inteligência Artificial. 14 prompts = 14 cartazes. 100% prático, em 15 minutos.">
+<meta property="og:title" content="Cartazes que Vendem — E-book + Masterclass">
+<meta property="og:description" content="Cria cartazes e flyers profissionais com Inteligência Artificial.">
+<meta property="og:image" content="assets/masterclass.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0618;--bg2:#140a2b;--card:#1a0f38;--line:#3a2470;--txt:#f4efff;--mut:#b7a9dc;--p:#8b3dff;--m:#e63cff;--o:#ff7a1a;--g:#ffc83d;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Outfit,system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden;font-size:17px}
+img,video{max-width:100%;display:block}
+img{height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Anton,Impact,sans-serif;font-weight:400;line-height:1.05;letter-spacing:.01em}
+h1{font-size:clamp(2.8rem,8vw,5.6rem)}
+h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:14px}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+section{padding:84px 0;position:relative}
+.grad{background:linear-gradient(90deg,var(--p),var(--m));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 30px;border-radius:999px;font-weight:700;text-decoration:none;background:linear-gradient(90deg,var(--p),var(--m));color:#fff;box-shadow:0 0 0 2px rgba(230,60,255,.4),0 10px 40px rgba(139,61,255,.5);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden;border:0;cursor:pointer;font-size:1.05rem;font-family:inherit}
+.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 0 0 2px var(--m),0 16px 50px rgba(230,60,255,.6)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);animation:shine 3.2s infinite}
+@keyframes shine{to{transform:translateX(120%)}}
+.btn.ghost{background:transparent;box-shadow:inset 0 0 0 2px var(--line)}
+.btn.ghost::after{display:none}
+:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding:12px 0;transition:.3s}
+header.s{background:rgba(11,6,24,.88);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:Anton;font-size:1.4rem;text-decoration:none}
+header .btn{padding:10px 20px;font-size:.92rem}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px;background:radial-gradient(ellipse 70% 60% at 75% 30%,rgba(139,61,255,.45),transparent 70%),radial-gradient(ellipse 50% 40% at 10% 90%,rgba(230,60,255,.25),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-block;border:1px solid var(--m);color:#f3b6ff;padding:6px 16px;border-radius:999px;font-size:.9rem;margin-bottom:22px;background:rgba(230,60,255,.1)}
+.hero p.lead{font-size:1.2rem;color:var(--mut);margin:22px 0 30px;max-width:540px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;color:var(--mut);font-size:.95rem}
+.trust b{display:block;color:#fff;font-family:Anton;font-size:1.7rem;font-weight:400}
+.poster{position:relative;perspective:900px}
+.poster img{max-height:82vh;width:auto;max-width:100%;object-fit:contain;margin:0 auto;border-radius:22px;box-shadow:0 30px 90px rgba(139,61,255,.65),0 0 0 2px rgba(230,60,255,.5);transition:transform .15s;transform-style:preserve-3d;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{translate:0 -12px}}
+/* marquee */
+.marq{overflow:hidden;background:linear-gradient(90deg,var(--p),var(--m));padding:14px 0;transform:rotate(-1.2deg);margin:-20px -10px 0}
+.marq div{display:flex;gap:44px;white-space:nowrap;width:max-content;animation:mq 26s linear infinite;font-family:Anton;font-size:1.3rem;letter-spacing:.04em}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* problem */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.box.bad{border-color:#5b2a3d}.box.good{border-color:#6a3bd0;background:linear-gradient(160deg,#241050,#1a0f38)}
+.box h3{font-size:1.7rem;margin-bottom:14px}
+.box li{list-style:none;padding:8px 0 8px 30px;position:relative;color:var(--mut)}
+.box li::before{position:absolute;left:0;font-weight:700}
+.bad li::before{content:"✕";color:#ff5d7a}.good li::before{content:"✓";color:#5dffb0}
+.good li{color:var(--txt)}
+/* selector interativo */
+.nichos{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}
+.nichos button{font:inherit;padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--txt);cursor:pointer;transition:.2s}
+.nichos button[aria-pressed=true]{background:linear-gradient(90deg,var(--p),var(--m));border-color:transparent;font-weight:700}
+.nicho-out{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.nicho-out h3{font-size:1.8rem;margin-bottom:8px}
+.nicho-out .ex{background:#0e0722;border-left:3px solid var(--m);padding:14px 16px;border-radius:8px;color:var(--mut);font-size:.95rem;margin-top:14px}
+/* counter */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px;text-align:center}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 10px}
+.stats b{font-family:Anton;font-weight:400;font-size:3rem;display:block}
+.stats span{color:var(--mut);font-size:.95rem}
+/* gallery */
+.sub{font-size:1.5rem;margin:42px 0 16px;color:var(--mut)}
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.gal button{padding:0;border:1px solid var(--line);background:var(--card);cursor:zoom-in;border-radius:14px;overflow:hidden;aspect-ratio:4/5}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal button:hover img{transform:scale(1.06)}
+.vids{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.vids video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:14px;border:1px solid var(--line);background:#120a28}
+.lb{position:fixed;inset:0;background:rgba(5,2,12,.94);display:none;place-items:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}.lb img{max-height:92vh;border-radius:14px}
+/* testemunhos */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:30px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.tcard p{margin-bottom:14px}.tcard b{color:var(--g)}
+/* about */
+.about{max-width:760px;margin:auto}
+.about p{color:var(--mut);margin-bottom:14px}
+/* salmo */
+.salmo{text-align:center;background:radial-gradient(ellipse at center,rgba(255,200,61,.14),transparent 65%);padding:100px 0}
+.salmo .flame{display:block;width:64px;height:3px;margin:0 auto 22px;background:var(--g);box-shadow:0 0 24px var(--g);border-radius:3px}
+.salmo blockquote{font-family:Anton;font-size:clamp(1.8rem,4.6vw,3.2rem);max-width:820px;margin:16px auto;line-height:1.2;color:var(--g);text-shadow:0 0 30px rgba(255,200,61,.4)}
+.salmo cite{color:var(--mut);font-style:normal}
+/* oferta */
+.offer{background:linear-gradient(160deg,#2a1260,#150a32);border:2px solid var(--m);border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;box-shadow:0 0 80px rgba(230,60,255,.3)}
+.offer ul{list-style:none}.offer li{padding:9px 0 9px 32px;position:relative}.offer li::before{content:"✓";position:absolute;left:0;color:#5dffb0;font-weight:700}
+.offer .btn{width:100%;justify-content:center;font-size:1.2rem;padding:20px}
+.offer small{display:block;text-align:center;color:var(--mut);margin-top:12px}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:18px 22px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font-size:1.5rem;color:var(--m);transition:.2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mut);margin-top:12px}
+footer{padding:44px 0 110px;text-align:center;color:var(--mut);border-top:1px solid var(--line);font-size:.95rem}
+footer a{color:#f3b6ff}
+.wa{position:fixed;right:18px;bottom:88px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 28px rgba(37,211,102,.55);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 14px rgba(37,211,102,0)}}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 16px;background:rgba(11,6,24,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:none}
+.sticky .btn{width:100%;justify-content:center}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+ .hero .wrap,.offer,.two,.nicho-out{grid-template-columns:1fr}
+ .hero{padding-top:100px}.poster{max-width:380px;margin:auto}
+ .stats{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}.gal button:last-child{grid-column:span 2;aspect-ratio:16/10}.vids{grid-template-columns:1fr 1fr}
+ .sticky{display:block}.wa{bottom:80px}section{padding:64px 0}.offer{padding:28px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap"><a class="logo" href="#topo">C. <span class="grad">STUDIO</span></a><a class="btn" href="#oferta">Garante o teu acesso</a></div></header>
+
+<main id="topo">
+<section class="hero"><div class="wrap">
+ <div>
+  <span class="pill">E-book + Masterclass · 100% prático</span>
+  <h1>Cartazes<br>que <span class="grad">vendem</span></h1>
+  <p class="lead">Cria cartazes e flyers profissionais com Inteligência Artificial. Sem saber design, sem programas pesados, em apenas 15 minutos.</p>
+  <div class="ctas"><a class="btn" href="PAY" data-pay>Quero o meu acesso agora</a><a class="btn ghost" href="#trabalhos">Ver trabalhos</a></div>
+  <div class="trust"><div><b data-n="14">0</b>prompts prontos</div><div><b data-n="14">0</b>cartazes para criar</div><div><b data-n="15">0</b>minutos de aula</div></div>
+ </div>
+ <div class="poster"><img id="tilt" src="assets/masterclass.jpg" alt="Cartaz da masterclass Cartazes que Vendem" width="1100" height="1956"></div>
+</div></section>
+
+<div class="marq" aria-hidden="true"><div><span>CARTAZES QUE VENDEM /</span><span>14 PROMPTS = 14 CARTAZES /</span><span>INTELIGÊNCIA ARTIFICIAL /</span><span>100% PRÁTICO /</span><span>CARTAZES QUE VENDEM /</span><span>14 PROMPTS = 14 CARTAZES /</span><span>INTELIGÊNCIA ARTIFICIAL /</span><span>100% PRÁTICO /</span></div></div>
+
+<section><div class="wrap rv">
+ <h2>Pára de pagar caro por <span class="grad">cada cartaz</span></h2>
+ <p style="color:var(--mut);max-width:640px">O teu negócio precisa de divulgação todos os dias. Esperar por um designer custa tempo e dinheiro. Com os prompts certos, tu mesmo cria em minutos.</p>
+ <div class="two">
+  <div class="box bad"><h3>Sem o método</h3><ul><li>Dependes de terceiros para cada promoção</li><li>Gastas horas em programas complicados</li><li>Resultados com ar amador que não vendem</li><li>Perdes clientes para quem comunica melhor</li></ul></div>
+  <div class="box good"><h3>Com Cartazes que Vendem</h3><ul><li>Crias o teu cartaz no telemóvel, quando quiseres</li><li>14 prompts testados, é só copiar e adaptar</li><li>Visual profissional que chama a atenção</li><li>Podes até vender o serviço a outros negócios</li></ul></div>
+ </div>
+</div></section>
+
+<section style="background:var(--bg2)"><div class="wrap rv">
+ <h2>Escolhe o teu negócio e <span class="grad">vê o que podes criar</span></h2>
+ <div class="nichos" id="nichos" role="group" aria-label="Escolher tipo de negócio"></div>
+ <div class="nicho-out" id="nout" aria-live="polite"></div>
+</div></section>
+
+<section><div class="wrap rv">
+ <h2>O que vais receber</h2>
+ <div class="stats"><div><b data-n="14">0</b><span>prompts prontos a usar</span></div><div><b data-n="15">0</b><span>minutos de masterclass</span></div><div><b data-n="2">0</b><span>formatos: e-book e vídeo</span></div><div><b data-n="100" data-s="%">0</b><span>prático, sem enrolação</span></div></div>
+ <div class="two" style="margin-top:22px">
+  <div class="box"><h3>E-book</h3><p style="color:var(--mut)">14 prompts para cartazes de comida, moda, eventos, promoções, festas, imobiliário, igrejas, beleza e muito mais.</p></div>
+  <div class="box"><h3>Masterclass</h3><p style="color:var(--mut)">Em 15 minutos vês, passo a passo, como transformar um prompt num cartaz pronto a publicar.</p></div>
+ </div>
+</div></section>
+
+<section id="trabalhos" style="background:var(--bg2)"><div class="wrap rv">
+ <h2>Trabalhos <span class="grad">feitos com este método</span></h2>
+ <p style="color:var(--mut)">Clica para ampliar. Isto é o que também podes criar.</p>
+ <h3 class="sub">Cartazes e flyers</h3>
+ <div class="gal">
+  <button data-lb="assets/culto.jpg" aria-label="Ampliar: Cartaz de culto de domingo"><img loading="lazy" src="assets/culto.jpg" alt="Cartaz de culto de domingo"></button>
+  <button data-lb="assets/designer.jpg" aria-label="Ampliar: Cartaz Designer em 3D"><img loading="lazy" src="assets/designer.jpg" alt="Cartaz Designer em 3D"></button>
+  <button data-lb="assets/importancia.jpg" aria-label="Ampliar: Post sobre designer de cartazes"><img loading="lazy" src="assets/importancia.jpg" alt="Post sobre designer de cartazes"></button>
+  <button data-lb="assets/mulheres.jpg" aria-label="Ampliar: Flyer evento Mulheres em Ascensão"><img loading="lazy" src="assets/mulheres.jpg" alt="Flyer evento Mulheres em Ascensão"></button>
+  <button data-lb="assets/mobitech.jpg" aria-label="Ampliar: Anúncio Mobitech Moçambique"><img loading="lazy" src="assets/mobitech.jpg" alt="Anúncio Mobitech Moçambique"></button>
+ </div>
+ <h3 class="sub">Vídeos</h3>
+ <div class="vids">
+  <video controls preload="metadata" playsinline poster="assets/poster_glamour.jpg" src="assets/glamour.mp4"></video>
+  <video controls preload="metadata" playsinline poster="assets/poster_video1.jpg" src="assets/video1.mp4"></video>
+  <video controls preload="metadata" playsinline poster="assets/poster_video2.jpg" src="assets/video2.mp4"></video>
+  <video controls preload="metadata" playsinline poster="assets/poster_video3.jpg" src="assets/video3.mp4"></video>
+ </div>
+</div></section>
+
+<section id="testemunhos" hidden><div class="wrap rv">
+ <h2>Quem já aplicou, <span class="grad">fala</span></h2>
+ <div class="tgrid" id="tgrid"></div>
+</div></section>
+
+<section><div class="wrap about rv">
+ <div>
+  <h2>Quem vai ensinar-te</h2>
+  <p>Sou o Dario, do C. Studio, e a minha missão é ajudar negócios a crescerem com comunicação visual forte, sem complicação.</p>
+  <p>Uso a Inteligência Artificial todos os dias para criar cartazes, flyers e vídeos para negócios reais. Neste e-book e masterclass entrego-te o método que uso, de forma simples e directa.</p>
+  <a class="btn ghost" href="https://instagram.com/dario_cumaio6" target="_blank" rel="noopener">Seguir @dario_cumaio6</a>
+ </div>
+</div></section>
+
+<section class="salmo"><div class="wrap rv">
+ <span class="flame" aria-hidden="true"></span>
+ <blockquote>“Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.”</blockquote>
+ <cite>Salmos 119:105</cite>
+</div></section>
+
+<section id="oferta"><div class="wrap rv">
+ <div class="offer">
+  <div><h2>Garante o teu <span class="grad">acesso agora</span></h2><p style="color:var(--mut)">Começa hoje a criar cartazes que chamam atenção e vendem.</p></div>
+  <div>
+   <ul><li>E-book com 14 prompts = 14 cartazes</li><li>Masterclass prática de 15 minutos</li><li>Funciona no telemóvel ou computador</li><li>Acesso digital imediato após o pagamento</li></ul>
+   <a class="btn" href="PAY" data-pay style="margin-top:20px">Quero o meu acesso agora</a>
+   <small>Pagamento seguro via Tutora</small>
+  </div>
+ </div>
+</div></section>
+
+<section style="background:var(--bg2)"><div class="wrap" style="max-width:780px">
+ <h2>Perguntas frequentes</h2>
+ <details><summary>Preciso de saber design?</summary><p>Não. Os prompts estão prontos e a masterclass mostra tudo passo a passo.</p></details>
+ <details><summary>Preciso de computador?</summary><p>Não é obrigatório. Podes seguir tudo pelo telemóvel.</p></details>
+ <details><summary>Como recebo o acesso?</summary><p>Depois do pagamento no link seguro, recebes o acesso ao e-book e à masterclass. Se tiveres dúvidas, fala comigo no WhatsApp.</p></details>
+ <details><summary>Posso usar para o meu negócio ou para vender o serviço?</summary><p>Sim. Podes criar para a tua marca e também oferecer o serviço a outros negócios.</p></details>
+ <details><summary>Tenho dúvidas antes de comprar</summary><p>Chama no WhatsApp 867355701 e eu respondo.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap"><b>C. Studio</b> · Soluções Criativas para o Teu Negócio<br>WhatsApp <a href="https://wa.me/258867355701">867355701</a> · Instagram <a href="https://instagram.com/dario_cumaio6" target="_blank" rel="noopener">@dario_cumaio6</a></div></footer>
+
+<a class="wa" href="https://wa.me/258867355701?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Cartazes%20que%20Vendem" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7a11 11 0 0 1-4.500-4c-.3-.5-1.100-1.500-1.100-2.900 0-1.300.7-2 1-2.300.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.100 1 2 1.300 2.300 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.700-.1l1.900.9c.3.100.5.200.6.300.1.100.1.700-.1 1.300z"/></svg></a>
+<div class="sticky"><a class="btn" href="PAY" data-pay>Quero o meu acesso agora</a></div>
+<div class="lb" id="lb" role="dialog" aria-label="Imagem ampliada"><img alt=""></div>
+
+<script>
+// ====== CONFIGURAÇÃO ======
+const PAY="https://pay.tutora.co.mz/78f4606842ee492daa5484d69fc0547a";
+// Para adicionar testemunhos: {nome:"Nome", texto:"O que a pessoa disse"}
+const TESTEMUNHOS=[];
+// ==========================
+document.querySelectorAll("[data-pay]").forEach(a=>{a.href=PAY;a.target="_blank";a.rel="noopener"});
+const hd=document.getElementById("hd");addEventListener("scroll",()=>hd.classList.toggle("s",scrollY>30),{passive:true});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+// contadores
+function count(el){const t=+el.dataset.n,s=el.dataset.s||"";let i=0;const st=Math.max(1,Math.ceil(t/40));const id=setInterval(()=>{i=Math.min(t,i+st);el.textContent=i+s;if(i>=t)clearInterval(id)},35)}
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){count(e.target);co.unobserve(e.target)}}));
+document.querySelectorAll("[data-n]").forEach(e=>co.observe(e));
+// tilt 3D
+const tl=document.getElementById("tilt");
+if(matchMedia("(hover:hover)").matches){tl.parentElement.addEventListener("mousemove",e=>{const r=tl.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;tl.style.transform=`rotateY(${x*14}deg) rotateX(${-y*14}deg)`});tl.parentElement.addEventListener("mouseleave",()=>tl.style.transform="")}
+// nichos
+const N={
+ "Restaurante":["Menu do dia que dá fome","Cartaz de promoção de hambúrguer ou prato do dia, com foto apetitosa, preço em destaque e contacto.","Ex.: “Combo especial por 250 MT, só hoje”"],
+ "Loja de roupa":["Nova colecção em destaque","Cartaz de lançamento de colecção ou saldos, com visual limpo, elegante e chamada para a loja.","Ex.: “Nova colecção chegou, até 30% de desconto”"],
+ "Salão de beleza":["Marcações abertas","Cartaz glamoroso para promover serviços, pacotes e horários, com a cara do teu salão.","Ex.: “Marca já o teu horário no WhatsApp”"],
+ "Igreja / Eventos":["Convite que enche a sala","Cartaz de culto, conferência, casamento ou festa, com data, hora e local bem claros.","Ex.: “Todos os domingos, 09h00”"],
+ "Imobiliário":["Casa à venda ou para arrendar","Cartaz com imagem forte do imóvel, preço, localização e contacto directo.","Ex.: “Moradia T3 disponível”"],
+ "Fitness":["Inscrições abertas","Cartaz energético para ginásio, treinos e desafios, que motiva a pessoa a inscrever-se.","Ex.: “Desafio 30 dias, vagas limitadas”"]};
+const nb=document.getElementById("nichos"),no=document.getElementById("nout");
+function show(k){nb.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.textContent===k));const [t,d,e]=N[k];no.innerHTML=`<div><h3>${t}</h3><p style="color:var(--mut)">${d}</p><div class="ex">${e}</div><a class="btn" style="margin-top:20px" href="${PAY}" target="_blank" rel="noopener">Quero criar o meu</a></div><img src="assets/${k==="Igreja / Eventos"?"culto":k==="Fitness"?"masterclass":"masterclass"}.jpg" alt="Exemplo de cartaz" style="border-radius:16px;max-height:420px;margin:auto;object-fit:cover">`}
+Object.keys(N).forEach(k=>{const b=document.createElement("button");b.textContent=k;b.onclick=()=>show(k);nb.appendChild(b)});show("Restaurante");
+// lightbox
+const lb=document.getElementById("lb");
+document.querySelectorAll("[data-lb]").forEach(b=>b.onclick=()=>{lb.querySelector("img").src=b.dataset.lb;lb.classList.add("on")});
+lb.onclick=()=>lb.classList.remove("on");addEventListener("keydown",e=>e.key==="Escape"&&lb.classList.remove("on"));
+// testemunhos
+if(TESTEMUNHOS.length){const s=document.getElementById("testemunhos");s.hidden=false;document.getElementById("tgrid").innerHTML=TESTEMUNHOS.map(t=>`<div class="tcard">${t.img?`<img src="${t.img}" alt="Testemunho de ${t.nome}" style="border-radius:12px;margin-bottom:12px">`:""}<p>“${t.texto||""}”</p><b>${t.nome||""}</b></div>`).join("")}
+// só um vídeo toca de cada vez
+const vs=[...document.querySelectorAll("video")];vs.forEach(v=>v.addEventListener("play",()=>vs.forEach(o=>o!==v&&o.pause())));
+</script>
+</body>
+</html>
